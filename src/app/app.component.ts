@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
+import { Endereco } from 'src/models/endereco.model';
 
 @Component({
   selector: 'app-root',
@@ -30,8 +31,8 @@ export class AppComponent {
         "tipoCep": "2",
         "numeroLocalidade": "",
         "situacao": "",
-        "faixasCaixaPostal": [],
-        "faixasCep": []
+        "faixasCaixaPostal": [Endereco],
+        "faixasCep": [Endereco]
       }
     ]
   }
